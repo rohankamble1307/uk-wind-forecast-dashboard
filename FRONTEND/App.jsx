@@ -25,7 +25,8 @@ import {
 } from "recharts";
 import "./App.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 const INITIAL_START = "2026-01-01";
 const INITIAL_END = "2026-01-31";
